@@ -77,31 +77,22 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>validate</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                    <execution>
                         <id>check</id>
                         <goals>
                             <goal>check</goal>
                         </goals>
                         <configuration>
-                            <rulesFiles>
-                                <rules>
-                                    <rule>
-                                        <limits>
-                                            <limit>
-                                                <counter>BRANCH</counter>
-                                                <value>COVERATIO</value>
-                                                <minimum>100%</minimum>
-                                            </limit>
-                                        </limits>
-                                    </rule>
-                                </rules>
-                            </rulesFiles>
+                            <rules>
+                                <rule>
+                                    <limits>
+                                        <limit>
+                                            <counter>BRANCH</counter>
+                                            <value>COVEREDRATIO</value>
+                                            <minimum>100%</minimum>
+                                        </limit>
+                                    </limits>
+                                </rule>
+                            </rules>
                         </configuration>
                     </execution>
                 </executions>
