@@ -83,6 +83,27 @@
                             <goal>check</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>check</id>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                        <configuration>
+                            <rulesFiles>
+                                <rules>
+                                    <rule>
+                                        <limits>
+                                            <limit>
+                                                <counter>BRANCH</counter>
+                                                <value>COVERATIO</value>
+                                                <minimum>100%</minimum>
+                                            </limit>
+                                        </limits>
+                                    </rule>
+                                </rules>
+                            </rulesFiles>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
